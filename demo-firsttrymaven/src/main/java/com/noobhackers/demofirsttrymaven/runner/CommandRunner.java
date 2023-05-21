@@ -19,6 +19,14 @@ public class CommandRunner implements CommandLineRunner {
                 .email("alabalanica@here.com")
                 .password("HakunaMatata@1")
                 .build();
+
+        User user2 = User.builder()
+                .firstName("Ivan")
+                .lastName("Ivanov")
+                .email("alabalanica@here.com")
+                .password("HakunaMatata@1")
+                .build();
+
         User savedUser = userRepository.save(user1);
         System.out.println(savedUser);
     }
